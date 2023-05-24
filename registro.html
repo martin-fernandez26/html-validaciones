@@ -39,8 +39,6 @@
                     </div>
                     <div class="input-container">
                         <input name="password" id="password" class="input" type="password" placeholder="Contraseña"
-                            required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,12}$"
-                            title="Al menos 6 caracteres, maximos 12, debe contener mayusculas, numero y no debe tener caracteres especiales"
                             data-tipo="password">
                         <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
@@ -57,6 +55,7 @@
                     <div class="input-container">
                         <input name="phoneNumber" id="phoneNumber" class="input" type="text"
                             placeholder="Número telefónico" pattern="\d{10}" required minlength="10" maxlength="10"
+                               title="Minimo 10 numeros"
                             data-tipo="numero">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
